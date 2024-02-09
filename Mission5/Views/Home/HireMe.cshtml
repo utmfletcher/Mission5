@@ -1,0 +1,35 @@
+﻿@{
+    ViewData["Title"] = "Hire Me";
+}
+<div class="text-center">
+    <h1 class="display-4">Hire Me</h1>
+    <p>You can hire me to teach you about Ice Hockey!</p>
+</div>
+
+<body>  
+    <div class="content-container">
+
+        <form style="text-align: center;">
+            <!-- Input for the number of hours -->
+            <label for="hours" style="text-align:center">Enter the number of hours you want to learn for:</label>
+            <input type="number" id="hours" name="hours" required>
+            <br />
+            <br />
+
+            <!-- Non-editable box showing the hourly rate -->
+            <label for="rate" style="text-align:center">Hourly Rate In USD: </label>
+            <input type="number" id="rate" name="rate" value="100" readonly> 
+            <br />
+            <br />
+
+            <!-- Button to calculate total -->
+            <button type="submit">Calculate Total</button>
+            <br />
+        </form>
+
+        <!-- Output box to display the total -->
+        <div id="totalOutput" style="text-align:center"></div>
+
+    </div>
+
+</body>
